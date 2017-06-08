@@ -23,9 +23,9 @@ abstract class Widget extends \Contao\Widget
 	{
 		parent::validate();
 
-		if( $this->hasErrors() && $this->errorMessage )
+		if( $this->hasErrors() && $this->errorMsg )
 		{
-			$this->arrErrors = array( $this->errorMessage );
+			$this->arrErrors = array( $this->errorMsg );
 		}
 	}
 }
